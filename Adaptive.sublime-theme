@@ -1,0 +1,82 @@
+// Documentation at https://www.sublimetext.com/docs/themes.html
+{
+	"variables":
+	{
+		"font_face": "FixedFixedsys",
+		"font_size_sm": 12,
+		"font_size": 12,
+		"font_size_lg": 12,
+		"font_size_title": 12,
+	},
+	"rules":
+	[
+    {
+      "class": "tabset_control",
+      "settings": {"file_tab_style": "square"},
+      "tab_overlap": 1,
+      "tab_height": 20,
+      "connector_height": 1,
+      "spacing": 1,
+    },
+    {
+      "class": "tab_control",
+      "settings": ["!show_tab_close_buttons"],
+      "content_margin": [2, 2, 4, 4]
+    },
+    {
+      "class": "tabset_control",
+      "layer0.opacity": 1.0,
+      "content_margin": [0, 2, 0, 0],
+      "tab_height": 20,
+    },
+    {
+      "class": "quick_panel_detail_label",
+      "link_color": "var(--accent)"
+    },
+    // statusbar background
+    {
+      "class": "status_bar",
+      "parents": [{"class": "window", "attributes": ["file_light"]}],
+      "layer0.tint": "#4A7EB3",
+    },
+    // statusbar foreground
+    {
+      "class": "label_control",
+      "parents": [{"class": "window", "attributes": ["file_light"]}, {"class": "status_bar"}],
+      "fg": "white",
+      "shadow_color": "color(white a(0.0))",
+    },
+
+    {
+      "class": "sidebar_button_control",
+      "layer0.texture": "Theme - Default/common/sidebar_button.png",
+      "layer0.opacity": { "target": 0.8, "speed": 4.0, "interpolation": "smoothstep" },
+      "layer0.tint": "var(--whiteish)",
+      "content_margin": [10, 11]
+    },
+
+    {
+      "class": "sidebar_button_control",
+      "attributes": ["hover"],
+      "layer0.opacity": { "target": 0.99, "speed": 4.0, "interpolation": "smoothstep" },
+    },
+
+
+    // git label
+    {
+      "class": "vcs_status",
+      "spacing": 4
+    },
+    {
+      "class": "vcs_branch_icon",
+      "parents": [{"class": "window", "attributes": ["file_light"]}, {"class": "status_bar"}],
+      "layer0.tint": "var(--whiteish)",
+    },
+    {
+      "class": "vcs_changes_annotation",
+      "parents": [{"class": "window", "attributes": ["file_light"]}, {"class": "status_bar"}],
+      "color": "var(--whiteish)",
+      "border_color": "color(var(--background) blend(black 60%))",
+    },
+	]
+}
