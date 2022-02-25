@@ -1,97 +1,84 @@
-/*
- * This theme was auto generated!
- *
- * Parts of this theme may differ
- * from the original, and color
- * definitions using 'alpha'
- * might not convert properly.
- *
- * Tool created by Judah Caruso
- * https://github.com/kyoto-shift
- *
- * License: MIT
-*/
 {
-    "author": "Mondo Generator",
-    "color_space_name": "sRGB",
-    "name": "gol",
-    "semantic_class": "mondo.gol",
-    "uuid": "4fa54d0a-6286-4102-88de-476435182da8",
-    "variables": {
-        "color00": "#f7f7f7",
-        "color01": "#C6242E",
-        "color02": "#fc1785",
-        "color03": "#123472",
-        "color04": "#6D8CAA",
-        "color05": "color(var(color04) alpha(0.15))",
-        "color06": "color(var(color04) alpha(0.33))",
-        "color07": "color(var(color04) alpha(0.06))",
-        "color08": "#000000",
-        "color09": "color(var(color17) alpha(0.60))",
-        "color10": "color(var(color04) alpha(0.00))",
-        "color11": "#0b0b0b",
-        "color12": "color(var(color04) alpha(0.03))",
-        "color13": "color(var(color11) alpha(0.80))",
-        "color14": "color(var(color04) alpha(0.31))",
-        "color15": "#61854e",
-        "color16": "color(var(color04) alpha(0.09))",
-        "color17": "#4c83ad",
-        "color18": "#b58900",
-        "color19": "#445e67",
-        "color20": "#D4665D",
-        "color21": "color(var(color17) alpha(0.31))",
-        "color22": "color(var(color17) alpha(0.08))",
-        "color23": "color(var(color17) alpha(0.46))",
-        "color24": "color(var(color17) alpha(0.15))",
-        "color25": "color(var(color17) alpha(0.21))",
-        "color26": "color(var(color01) alpha(0.31))",
-        "color27": "color(var(color01) alpha(0.08))",
-        "color28": "color(var(color01) alpha(0.46))",
-        "color29": "color(var(color01) alpha(0.15))",
-        "color30": "color(var(color01) alpha(0.21))",
-        "color31": "color(var(color18) alpha(0.31))",
-        "color32": "color(var(color18) alpha(0.08))",
-        "color33": "color(var(color18) alpha(0.46))",
-        "color34": "color(var(color18) alpha(0.15))",
-        "color35": "color(var(color18) alpha(0.21))",
-        "color36": "color(var(color20) alpha(0.31))",
-        "color37": "color(var(color20) alpha(0.08))",
-        "color38": "color(var(color20) alpha(0.46))",
-        "color39": "color(var(color20) alpha(0.15))",
-        "color40": "color(var(color20) alpha(0.21))",
-        "color41": "color(var(color15) alpha(0.31))",
-        "color42": "color(var(color15) alpha(0.08))",
-        "color43": "color(var(color15) alpha(0.46))",
-        "color44": "color(var(color15) alpha(0.15))",
-        "color45": "color(var(color15) alpha(0.21))"
-    },
+    "name":   "budlite",
+    "author": "budRich",
+
     "globals": {
-        "background": "var(color00)",
-        "accent": "var(color01)",
-        "caret": "var(color02)",
-        "foreground": "var(color03)",
-        "gutter": "var(color00)",
-        "invisibles": "var(color04)",
-        "guide": "var(color05)",
-        "active_guide": "var(color06)",
-        "line_highlight": "var(color07)",
-        "selection": "var(color02)",
-        "selection_foreground": "var(color08)",
-        "highlight": "var(color02)",
-        "selection_border": "var(color09)",
-        "stack_guide": "var(color10)",
+        "background":           "var(white)",
+        "accent":               "var(red)",
+        "caret":                "var(pink)",
+        "foreground":           "var(blue1)",
+        "gutter":               "var(white)",
+        "invisibles":           "var(blue2)",
+        "guide":                "var(color05)",
+        "active_guide":         "var(color06)",
+        "line_highlight":       "var(color07)",
+        "selection":            "var(pink)",
+        "selection_foreground": "var(black)",
+        "highlight":            "var(pink)",
+        "selection_border":     "var(color09)",
+        "stack_guide":          "var(color10)",
     },
+
+    "variables": {
+        "white": "#f7f7f7",
+        "red":   "#C6242E",
+        "blue1": "#123472",
+        "blue2": "#6D8CAA",
+        "blue3": "#4c83ad",
+        "blue4": "#445e67",
+        "pink":  "#fc1785",
+        "green": "#61854e",
+        "yellow":"#b58900",
+        "brown": "#D4665D",
+        "black": "#000000",
+        "dark":  "#0b0b0b",
+        "color05": "color(var(blue2) alpha(0.15))",
+        "color06": "color(var(blue2) alpha(0.33))",
+        "color07": "color(var(blue2) alpha(0.06))",
+        "color09": "color(var(blue3) alpha(0.60))",
+        "color10": "color(var(blue2) alpha(0.00))",
+        "color12": "color(var(blue2) alpha(0.03))",
+        "color13": "color(var(dark) alpha(0.80))",
+        "color14": "color(var(blue2) alpha(0.31))",
+        "color16": "color(var(blue2) alpha(0.09))",
+        "color21": "color(var(blue3) alpha(0.31))",
+        "color22": "color(var(blue3) alpha(0.08))",
+        "color23": "color(var(blue3) alpha(0.46))",
+        "color24": "color(var(blue3) alpha(0.15))",
+        "color25": "color(var(blue3) alpha(0.21))",
+        "color26": "color(var(red) alpha(0.31))",
+        "color27": "color(var(red) alpha(0.08))",
+        "color28": "color(var(red) alpha(0.46))",
+        "color29": "color(var(red) alpha(0.15))",
+        "color30": "color(var(red) alpha(0.21))",
+        "color31": "color(var(yellow) alpha(0.31))",
+        "color32": "color(var(yellow) alpha(0.08))",
+        "color33": "color(var(yellow) alpha(0.46))",
+        "color34": "color(var(yellow) alpha(0.15))",
+        "color35": "color(var(yellow) alpha(0.21))",
+        "color36": "color(var(brown) alpha(0.31))",
+        "color37": "color(var(brown) alpha(0.08))",
+        "color38": "color(var(brown) alpha(0.46))",
+        "color39": "color(var(brown) alpha(0.15))",
+        "color40": "color(var(brown) alpha(0.21))",
+        "color41": "color(var(green) alpha(0.31))",
+        "color42": "color(var(green) alpha(0.08))",
+        "color43": "color(var(green) alpha(0.46))",
+        "color44": "color(var(green) alpha(0.15))",
+        "color45": "color(var(green) alpha(0.21))"
+    },
+    
     "rules": [
         {
             "name": "Comments",
             "scope": "comment, punctuation.definition.comment",
             "font_style": "italic",
-            "foreground": "var(color01)"
+            "foreground": "var(red)"
         },
         {
             "name": "Tag",
             "scope": "entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter",
-            "foreground": "var(color01)"
+            "foreground": "var(red)"
         },
         {
             "name": "URL",
@@ -101,7 +88,7 @@
         {
             "name": "Markdown - Plain",
             "scope": "text.html.markdown, punctuation.definition.list_item.markdown",
-            "foreground": "var(color11)"
+            "foreground": "var(dark)"
         },
         {
             "name": "Markdown - Markup Raw Inline",
@@ -117,7 +104,7 @@
         {
             "name": "Markdown - Heading",
             "scope": "markdown.heading, markup.heading | markup.heading entity.name, markup.heading.markdown punctuation.definition.heading.markdown",
-            "foreground": "var(color01)"
+            "foreground": "var(red)"
         },
         {
             "name": "Markup - Italic",
@@ -138,13 +125,13 @@
             "name": "Markup - Underline",
             "scope": "markup.underline",
             "font_style": "underline",
-            "foreground": "var(color15)"
+            "foreground": "var(green)"
         },
         {
             "name": "Markup - Strike",
             "scope": "markup.strike",
             "font_style": "strike",
-            "foreground": "var(color04)"
+            "foreground": "var(blue2)"
         },
         {
             "name": "Markdown - Blockquote",
@@ -156,22 +143,22 @@
             "name": "Markup - Quote",
             "scope": "markup.quote",
             "font_style": "italic",
-            "foreground": "var(color04)"
+            "foreground": "var(blue2)"
         },
         {
             "name": "Markdown - Link",
             "scope": "string.other.link.title.markdown",
-            "foreground": "var(color01)"
+            "foreground": "var(red)"
         },
         {
             "name": "Markdown - Link Description",
             "scope": "string.other.link.description.title.markdown",
-            "foreground": "var(color17)"
+            "foreground": "var(blue3)"
         },
         {
             "name": "Markdown - Link Anchor",
             "scope": "constant.other.reference.link.markdown",
-            "foreground": "var(color18)"
+            "foreground": "var(yellow)"
         },
         {
             "name": "Markup - Raw Block",
@@ -192,7 +179,7 @@
         {
             "name": "Markdown - Fenced Bode Block Variable",
             "scope": "markup.raw.block.fenced.markdown, variable.language.fenced.markdown, punctuation.section.class.end",
-            "foreground": "var(color11)"
+            "foreground": "var(dark)"
         },
         {
             "name": "Markdown - Fenced Bode Block Punctuation",
@@ -202,14 +189,14 @@
         {
             "name": "Markdown - Fenced Language",
             "scope": "variable.language.fenced.markdown",
-            "foreground": "var(color04)"
+            "foreground": "var(blue2)"
         },
         {
             "name": "Markdown - Separator",
             "scope": "meta.separator",
             "background": "var(color12)",
             "font_style": "bold",
-            "foreground": "var(color04)"
+            "foreground": "var(blue2)"
         },
         {
             "name": "Markup - Table",
@@ -225,28 +212,28 @@
         {
             "name": "Markdown - HTML Punctuation Definition",
             "scope": "text.html.markdown meta.disable-markdown punctuation.definition",
-            "foreground": "var(color19)"
+            "foreground": "var(blue4)"
         },
         {
             "name": "Markdown - TODO Done",
             "scope": "punctuation.definition.list_item.todo.done",
-            "foreground": "var(color15)"
+            "foreground": "var(green)"
         },
         {
             "name": "Markdown - TODO Cancelled",
             "scope": "punctuation.definition.list_item.todo.cancelled",
-            "foreground": "var(color20)"
+            "foreground": "var(brown)"
         },
         {
             "name": "Markdown - TODO GitHub Checkbox",
             "scope": "markup.checkbox.markdown markup.checkbox.checked_symbol.markdown",
-            "foreground": "var(color15)"
+            "foreground": "var(green)"
         },
         {
             "name": "Markdown - Admonition Section Title",
             "scope": "markup.admonition.markdown string.other.admonition.title.markdown",
             "font_style": "bold",
-            "foreground": "var(color11)"
+            "foreground": "var(dark)"
         },
         {
             "name": "Markdown - Admonition Header",
@@ -267,7 +254,7 @@
             "name": "Markdown - Admonition Section Type",
             "scope": "markup.admonition.markdown entity.name.admonition.markdown",
             "font_style": "bold",
-            "foreground": "var(color17)"
+            "foreground": "var(blue3)"
         },
         {
             "name": "Markdown - Admonition Element Background",
@@ -299,7 +286,7 @@
             "name": "Markdown - Admonition Section Type (Hint)",
             "scope": "markup.admonition.markdown.hint entity.name.admonition.markdown",
             "font_style": "bold",
-            "foreground": "var(color01)"
+            "foreground": "var(red)"
         },
         {
             "name": "Markdown - Admonition Element Background (Hint)",
@@ -331,7 +318,7 @@
             "name": "Markdown - Admonition Section Type (Warning)",
             "scope": "markup.admonition.markdown.warning entity.name.admonition.markdown",
             "font_style": "bold",
-            "foreground": "var(color18)"
+            "foreground": "var(yellow)"
         },
         {
             "name": "Markdown - Admonition Element Background (Warning)",
@@ -363,7 +350,7 @@
             "name": "Markdown - Admonition Section Type (Danger)",
             "scope": "markup.admonition.markdown.danger entity.name.admonition.markdown",
             "font_style": "bold",
-            "foreground": "var(color20)"
+            "foreground": "var(brown)"
         },
         {
             "name": "Markdown - Admonition Element Background (Danger)",
@@ -395,7 +382,7 @@
             "name": "Markdown - Admonition Section Type (Attention)",
             "scope": "markup.admonition.markdown.attention entity.name.admonition.markdown",
             "font_style": "bold",
-            "foreground": "var(color15)"
+            "foreground": "var(green)"
         },
         {
             "name": "Markdown - Admonition Element Background (Attention)",
@@ -411,42 +398,45 @@
         {
             "name": "Bracket Highlighter Default",
             "scope": "brackethighlighter.default",
-            "foreground": "var(color17)"
+            "foreground": "var(blue3)"
         },
         {
             "name": "Bracket Highlighter Unmatched",
             "scope": "brackethighlighter.unmatched",
-            "foreground": "var(color20)"
+            "foreground": "var(brown)"
         },
         {
             "name": "Bracket Highlighter Curly",
             "scope": "brackethighlighter.curly",
-            "foreground": "var(color17)"
+            "foreground": "var(blue3)"
         },
         {
             "name": "Bracket Highlighter Round",
             "scope": "brackethighlighter.round",
-            "foreground": "var(color18)"
+            "foreground": "var(yellow)"
         },
         {
             "name": "Bracket Highlighter Square",
             "scope": "brackethighlighter.square",
-            "foreground": "var(color01)"
+            "foreground": "var(red)"
         },
         {
             "name": "Bracket Highlighter Angle",
             "scope": "brackethighlighter.angle",
-            "foreground": "var(color20)"
+            "foreground": "var(brown)"
         },
         {
             "name": "Bracket Highlighter Tag",
             "scope": "brackethighlighter.tag",
-            "foreground": "var(color19)"
+            "foreground": "var(blue4)"
         },
         {
             "name": "Bracket Highlighter Quote",
             "scope": "brackethighlighter.quote",
-            "foreground": "var(color15)"
+            "foreground": "var(green)"
         }
-    ]
+    ],
+    "semantic_class": "budlabs.budlite",
+    "uuid": "4fa54d0a-6286-4102-88de-476435182da8",
+    "color_space_name": "sRGB"
 }
